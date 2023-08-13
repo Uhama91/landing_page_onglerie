@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 65.2%;
+  min-width: 70vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 0 20px;
+}
+
+#hero,
+#Bienvenue,
+#features,
+#video,
+#Prestations,
+#Contacts {
+  margin: 0 auto;
+  max-width: 60%;
+  min-width: 80%;
+}
+
+header {
+  position: fixed;
+  background-color: rgb(245, 236, 236);
+  border-radius: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "logo h1 h1"
+    "nav nav nav";
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  grid-area: h1;
+  font-size: 5rem;
+}
+
+#header-img {
+  height: 7rem;
+  grid-area: logo;
+  padding-top: 10px;
+  float: left;
+}
+
+#nav-bar {
+  grid-area: nav;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: pink;
+  padding: 8px;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#hero {
+  margin-top: 10rem;
+}
+
+.title-form {
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  width: 40vw;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+textarea {
+  resize: none;
+  border-radius: 10px;
+  height: 10rem;
+  width: 30rem;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: rgb(245, 236, 236);
+  width: 20vw;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: pink;
+  transition: 300ms;
+}
+
+#features {
+  margin-bottom: 3rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+#video {
+  display: flex;
+  margin: 0 auto;
+  width: 40rem;
+  height: 30rem;
+  margin-bottom: 3rem;
+}
+
+#Prestations {
+  margin-bottom: 3rem;
+}
+
+#Contacts {
+  padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    font-size: 1.2rem;
+  }
+}
